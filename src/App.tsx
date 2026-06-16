@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Menu, X, Globe, Layers, MapPin } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { FieldGuides } from './components/FieldGuides';
 import { GeologyExplorer } from './components/GeologyExplorer';
 import { Plans } from './components/Plans';

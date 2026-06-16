@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Check, Info, ShieldCheck, Flame } from 'lucide-react';
+import { Check, ShieldCheck, Flame } from 'lucide-react';
 
 interface PricingPlan {
   name: string;

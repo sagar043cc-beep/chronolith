@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Compass, BookOpen, Star, ArrowRight, Filter } from 'lucide-react';
+import { Compass, BookOpen, Star, ArrowRight } from 'lucide-react';
 
 interface Guide {
   id: string;
@@ -84,7 +84,6 @@ const guidesData: Guide[] = [
 
 export const FieldGuides: React.FC = () => {
   const [filter, setFilter] = useState<'All' | 'Igneous' | 'Sedimentary' | 'Metamorphic'>('All');
-  const [hoveredId, setHoveredId] = useState<string | null>(null);
 
   const filteredGuides = filter === 'All' 
     ? guidesData 
@@ -133,8 +132,6 @@ export const FieldGuides: React.FC = () => {
               animationDelay: `${0.3 + index * 0.08}s`,
               opacity: 0,
             }}
-            onMouseEnter={() => setHoveredId(guide.id)}
-            onMouseLeave={() => setHoveredId(null)}
           >
             {/* Image section */}
             <div className="h-56 relative overflow-hidden">

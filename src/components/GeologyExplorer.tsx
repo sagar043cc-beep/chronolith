@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Layers, ChevronRight, HelpCircle, Activity, Award } from 'lucide-react';
+import { Layers, ChevronRight, Activity, Award } from 'lucide-react';
 
 interface GeologicEra {
   id: string;
